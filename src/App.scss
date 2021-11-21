@@ -1,0 +1,10 @@
+@use "src/assets/styles/_index.scss" as *;
+
+.app {
+  min-height: 100vh;
+}
+.app-content {
+  --offset: calc(var(--footer-height) + var(--logo-height));
+  min-height: calc(100vh - var(--offset));
+  @include flexbox(row, center, center);
+}
